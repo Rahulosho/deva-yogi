@@ -1,0 +1,124 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f8f9fa;
+  }
+
+
+/* header section start */
+.hero-header {
+    position: relative;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  
+  .hero-content {
+    background-color: rgba(0, 0, 0, 0.4); /* semi-transparent overlay for readability */
+    padding: 2rem;
+    border-radius: 1rem;
+  }
+
+  .scroll-down-arrow i {
+    animation: bounce 2s infinite;
+    transition: transform 0.3s ease;
+  }
+  
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(12px);
+    }
+  }
+  
+  
+/* header section  end */
+
+
+
+  .section-divider {
+    width: 60px;
+    height: 4px;
+    background-color: #2575fc;
+    margin: 0 auto 20px;
+    border-radius: 2px;
+  }
+
+
+
+  /* course section cards start */
+  .card-img-top {
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+  }
+  
+  .course-card {
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  }
+  .badge {
+    font-size: 0.75rem;
+    padding: 0.4em 0.6em;
+  }
+
+  
+  .icon-circle {
+    width: 60px;
+    height: 60px;
+    background-color: #6abf69;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 auto;
+  }
+  
+  /* course section cards end */
+
+
+  /* table section start */
+  .table thead {
+    background-color: #2575fc;
+    color: white;
+  }
+
+/* table section end */
+
+
+/* footer secction start */
+
+  footer {
+    background-color: #343a40;
+    color: white;
+    padding: 20px 0;
+  }
+
+
+  /* footer section end */
+
+
+
+  /* testimonial section start  */
+  .testimonial {
+    background-color: #ffffff;
+    border-left: 4px solid #2575fc;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  /* testimonial section end  */
+
+
+  .shape-divider {
+    height: 100px;
+    background: url('https://www.svgrepo.com/show/271133/wave-top.svg') no-repeat;
+    background-size: cover;
+  }
