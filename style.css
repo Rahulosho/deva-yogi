@@ -93,6 +93,90 @@ body {
 /* table section end */
 
 
+/* cahkra section start */
+.chakra-timeline {
+  position: relative;
+  padding: 50px 0;
+}
+
+.chakra-timeline::before {
+  content: "";
+  position: absolute;
+  left: 40px;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: linear-gradient(to bottom, #ffbfa3, #ffa07a);
+  border-radius: 2px;
+}
+
+.chakra-item {
+  position: relative;
+  margin-bottom: 60px;
+  padding-left: 100px;
+}
+
+.chakra-dot {
+  position: absolute;
+  left: 32px;
+  top: 0;
+  width: 16px;
+  height: 16px;
+  background-color: #ffa07a;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.chakra-content {
+  background: #fff8f3;
+  border-left: 5px solid #ffa07a;
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+  transition: all 0.3s ease-in-out;
+}
+
+.chakra-content:hover {
+  transform: translateY(-5px);
+}
+
+.chakra-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #d45a00;
+  margin-bottom: 10px;
+}
+
+.chakra-section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #6a2c0f;
+}
+
+.chakra-sub {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .chakra-item {
+    padding-left: 70px;
+  }
+
+  .chakra-timeline::before {
+    left: 25px;
+  }
+
+  .chakra-dot {
+    left: 17px;
+  }
+}
+/* chakra section end  */
+
+
 /* footer secction start */
 
   footer {
