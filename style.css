@@ -95,155 +95,100 @@ body {
 
 
 /* philoshpy section start */
-.healing-section {
-  padding: 60px 20px;
-  background-color: #f8f9fa; /* light background for readability */
-  color: #333;
-}
-
-.healing-container {
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-.healing-heading {
-  text-align: center;
-  font-size: 2.5rem;
-  margin-bottom: 40px;
-  color: #2D3748; /* Chakra Gray.800 */
-}
-
-.healing-content h3 {
-  margin-top: 30px;
-  font-size: 1.5rem;
-  color: #2B6CB0; /* Chakra Blue.600 */
-}
-
-.healing-content p {
-  line-height: 1.7;
-  margin-bottom: 1em;
-}
-
-.healing-content ul {
-  list-style-type: disc;
-  padding-left: 1.5em;
-}
-
-.healing-content li {
-  margin-bottom: 1.2em;
-  line-height: 1.6;
-}
-
-@media (max-width: 600px) {
-  .healing-heading {
-    font-size: 2rem;
-  }
-
-  .healing-content h3 {
-    font-size: 1.25rem;
-  }
-
-  .healing-section {
-    padding: 40px 16px;
-  }
-}
-
-/* philoshpy section end */
-
-
-/* cahkra section start */
-.chakra-timeline {
+.timeline {
   position: relative;
-  padding-left: 40px;
-  border-left: 4px solid #ccc;
+  padding: 2rem 0;
+  margin: 3rem 0;
 }
 
-.chakra-item {
-  display: flex;
-  align-items: flex-start;
-  margin-bottom: 40px;
-  position: relative;
-}
-
-.chakra-dot {
-  flex-shrink: 0;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  overflow: hidden;
+.timeline::before {
+  content: '';
   position: absolute;
-  left: -30px;
   top: 0;
-  border: 4px solid #fff;
-  box-shadow: 0 0 0 4px #ccc;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 3px;
   background-color: #ccc;
+  z-index: 1;
 }
 
-.chakra-dot img {
+.timeline-step {
+  position: relative;
+  margin-bottom: 4rem;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
 }
 
-.chakra-content {
-  padding-left: 80px;
+.timeline-content {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
 }
 
-.chakra-title {
-  font-size: 1.25rem;
-  font-weight: bold;
-  margin-bottom: 10px;
+.timeline-icon {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #007bff;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  z-index: 3;
 }
 
-/* Chakra colors */
-.chakra-item:nth-child(1) .chakra-dot {
-  background-color: #ff0000; /* Root - Red */
-}
+@media (min-width: 768px) {
+  .timeline-step {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
 
-.chakra-item:nth-child(2) .chakra-dot {
-  background-color: #ff7f00; /* Sacral - Orange */
-}
+  .timeline-step:nth-child(odd) .timeline-content {
+    order: 1;
+    margin-left: auto;
+    margin-right: calc(50% + 2rem);
+  }
 
-.chakra-item:nth-child(3) .chakra-dot {
-  background-color: #ffff00; /* Solar Plexus - Yellow */
-}
-
-.chakra-item:nth-child(4) .chakra-dot {
-  background-color: #00ff00; /* Heart - Green */
-}
-
-.chakra-item:nth-child(5) .chakra-dot {
-  background-color: #eaeaea; /* Throat - Light Blue */
-}
-
-.chakra-item:nth-child(6) .chakra-dot {
-  background-color: #8a2be2; /* Third Eye - Indigo */
-}
-
-.chakra-item:nth-child(7) .chakra-dot {
-  background-color: #ee82ee; /* Crown - Violet */
+  .timeline-step:nth-child(even) .timeline-content {
+    order: 2;
+    margin-left: calc(50% + 2rem);
+    margin-right: auto;
+  }
 }
 
 @media (max-width: 767px) {
-  .chakra-item {
-    flex-direction: column;
-    padding-left: 0;
+  .timeline::before {
+    left: 12px;
   }
 
-  .chakra-dot {
-    left: 0;
-    top: -10px;
-    margin-bottom: 20px;
-    position: relative;
+  .timeline-content {
+    margin-left: 2.5rem !important;
   }
 
-  .chakra-content {
-    padding-left: 0;
+  .timeline-icon {
+    display: none;
   }
 }
-/* chakra section end  */
 
+.section-title {
+  text-align: center;
+  margin: 3rem 0 2rem;
+  font-weight: bold;
+  font-size: 2.2rem;
+  color: #007bff;
+}
+/* philoshpy section end */
+
+
+  
 
 /* footer secction start */
 
