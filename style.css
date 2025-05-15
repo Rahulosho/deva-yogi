@@ -94,6 +94,63 @@ body {
 /* table section end */
 
 
+/* philoshpy section start */
+.healing-section {
+  padding: 60px 20px;
+  background-color: #f8f9fa; /* light background for readability */
+  color: #333;
+}
+
+.healing-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.healing-heading {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #2D3748; /* Chakra Gray.800 */
+}
+
+.healing-content h3 {
+  margin-top: 30px;
+  font-size: 1.5rem;
+  color: #2B6CB0; /* Chakra Blue.600 */
+}
+
+.healing-content p {
+  line-height: 1.7;
+  margin-bottom: 1em;
+}
+
+.healing-content ul {
+  list-style-type: disc;
+  padding-left: 1.5em;
+}
+
+.healing-content li {
+  margin-bottom: 1.2em;
+  line-height: 1.6;
+}
+
+@media (max-width: 600px) {
+  .healing-heading {
+    font-size: 2rem;
+  }
+
+  .healing-content h3 {
+    font-size: 1.25rem;
+  }
+
+  .healing-section {
+    padding: 40px 16px;
+  }
+}
+
+/* philoshpy section end */
+
+
 /* cahkra section start */
 .chakra-timeline {
   position: relative;
