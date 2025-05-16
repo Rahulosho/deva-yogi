@@ -360,3 +360,55 @@ body {
     background: url('https://www.svgrepo.com/show/271133/wave-top.svg') no-repeat;
     background-size: cover;
   }
+
+
+  /* form start */
+      .form-wrapper {
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
+      padding: 3rem 2rem;
+      max-width: 700px;
+      width: 100%;
+    }
+    .form-title {
+      font-weight: bold;
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+    .form-subtitle {
+      font-size: 1rem;
+      color: #666;
+      margin-bottom: 2rem;
+    }
+    .form-control:focus {
+      border-color: #6c63ff;
+      box-shadow: 0 0 0 0.2rem rgba(108, 99, 255, 0.25);
+    }
+    .form-icon {
+      width: 42px;
+      text-align: center;
+      color: #6c63ff;
+    }
+    .form-group {
+      margin-bottom: 1.2rem;
+    }
+    .btn-submit {
+      background: #6c63ff;
+      color: white;
+      border: none;
+      padding: 0.75rem 2rem;
+      font-size: 1rem;
+      font-weight: bold;
+      border-radius: 50px;
+      transition: 0.3s;
+    }
+    .btn-submit:hover {
+      background: #5848e0;
+    }
+    @media (max-width: 576px) {
+      .form-wrapper {
+        padding: 2rem 1rem;
+      }
+    }
+    /* form end */

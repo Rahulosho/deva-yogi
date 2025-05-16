@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Deva - Sound Healing & Therapy</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <style>
+        body {
+      background: linear-gradient(135deg, #e8f5f8, #fef6f0);
+      font-family: 'Segoe UI', sans-serif;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+
+
+  <form action="https://api.staticforms.xyz/submit" method="POST" class="form-wrapper">
+    <input type="hidden" name="apiKey" value="sf_3hce5k5hilain6m2bnij09cc">
+    <input type="hidden" name="replyTo" value="@">
+    <input type="hidden" name="redirectTo" value="thank-you.html">
+    <input type="text" name="honeypot" style="display:none" tabindex="-1" autocomplete="off">
+
+    <div class="text-center">
+      <h2 class="form-title">Book Your Free Consultation</h2>
+      <p class="form-subtitle">Let’s explore how sound healing can support your journey</p>
+    </div>
+
+    <div class="form-group d-flex align-items-center">
+      <div class="form-icon"><i class="fas fa-user"></i></div>
+      <input type="text" class="form-control ms-2" placeholder="Your Full Name *" name="name" required>
+    </div>
+
+    <div class="form-group d-flex align-items-center">
+      <div class="form-icon"><i class="fas fa-envelope"></i></div>
+      <input type="email" class="form-control ms-2" placeholder="Email Address *" name="email" required>
+    </div>
+
+    <div class="form-group d-flex align-items-center">
+      <div class="form-icon"><i class="fas fa-phone"></i></div>
+      <input type="tel" class="form-control ms-2" placeholder="Phone Number (10 digits)*" name="$phone" required pattern="[0-9]{10}" title="Enter a valid 10-digit phone number">
+    </div>
+
+    <div class="form-group d-flex align-items-center">
+      <div class="form-icon"><i class="fas fa-flag"></i></div>
+      <input type="text" class="form-control ms-2" placeholder="Your Country * " name="$nationality required" >
+    </div>
+
+    <div class="form-group d-flex align-items-center">
+      <div class="form-icon"><i class="fas fa-calendar-alt"></i></div>
+      <input type="date" class="form-control ms-2" name="$preferredDate">
+    </div>
+
+    <div class="form-group d-flex align-items-center">
+      <div class="form-icon"><i class="fas fa-spa"></i></div>
+      <select class="form-control ms-2" name="$therapyType" required>
+        <option value="">Select Therapy Type *</option>
+        <option value="Tibetan Bowl Therapy">Tibetan Bowl Therapy</option>
+        <option value="Chakra Balancing">Chakra Balancing</option>
+        <option value="Gong Healing">Gong Healing</option>
+        <option value="Vocal Toning">Vocal Toning</option>
+        <option value="Guided Sound Meditation">Guided Sound Meditation</option>
+      </select>
+    </div>
+
+    <div class="form-group d-flex align-items-start">
+      <div class="form-icon pt-2"><i class="fas fa-comment-dots"></i></div>
+      <textarea class="form-control ms-2" rows="4" placeholder="Tell us briefly about your healing needs *" name="message" required></textarea>
+    </div>
+
+    <div class="text-center mt-4">
+      <button type="submit" class="btn btn-submit">Submit Now</button>
+    </div>
+  </form>
+</body>
+</html>
