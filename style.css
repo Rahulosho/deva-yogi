@@ -5,6 +5,14 @@ body {
 
 
 /* header section start */
+.custom-hero-header {
+  background-color: #cce0f4; /* fallback color */
+  background-image: url('img/header-1.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
 .hero-header {
     position: relative;
     height: 100vh;
