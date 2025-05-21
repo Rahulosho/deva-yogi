@@ -93,6 +93,100 @@ body {
   /* course section cards end */
 
 
+/* feel heal reveal start */
+/* Accent and Typography */
+.frh-icon-accent {
+  color: #7a4fd1;
+}
+
+.frh-title {
+  color: #2b2b2b;
+}
+
+.frh-divider {
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(to right, #7a4fd1, #ffc107);
+  border: none;
+  margin-top: 1rem;
+}
+
+/* Fade-in effect */
+.frh-fade-in {
+  animation: frhFadeInUp 1s ease both;
+}
+
+@keyframes frhFadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* List Styling */
+.frh-icon-list i {
+  font-size: 1.3rem;
+  vertical-align: middle;
+}
+
+/* Callout Box */
+.frh-callout {
+  border-left: 6px solid #7a4fd1;
+  background: #f9f9f9;
+}
+
+/* Icon Cards */
+.frh-card {
+  background: #ffffff;
+  transition: all 0.3s ease;
+  border-left: 4px solid transparent;
+}
+
+.frh-card:hover {
+  transform: translateY(-6px);
+  border-left-color: #7a4fd1;
+}
+
+/* quote */
+.frh-quote-modern {
+  max-width: 700px;
+  margin: auto;
+  position: relative;
+}
+
+.frh-quote-img-top {
+  text-align: left;
+  margin-bottom: -1.5rem;
+  padding-left: -3rem;
+}
+
+.frh-quote-img-bottom {
+  text-align: right;
+  margin-top: -1.5rem;
+  margin-right: 0.5rem;
+}
+
+.frh-quote-text {
+  font-size: 1.5rem;
+  line-height: 1.8;
+  padding: 0 1rem;
+}
+
+.frh-quote-author {
+  font-weight: bold;
+  font-size: 2rem;
+  font-style: italic;
+}
+
+/* feel heal reveal end */
+
+
+
+
   /* table section start */
   .table thead {
     background-color: #2575fc;
