@@ -3,7 +3,9 @@ body {
     background-color: #f8f9fa;
   }
 
-
+.bg-beige{
+  background-color:#DDCAAD ;
+}
 /* header section start */
 .custom-hero-header {
   background-color: #955e06; /* fallback color */
@@ -12,6 +14,7 @@ body {
   background-position: center;
   height: 100vh;
 }
+
 
 .hero-header {
     position: relative;
